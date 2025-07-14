@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Remind Me - Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header {
+      top: 0;
+    }
+
+    footer {
+      bottom: 0;
+    }
+
+    .content {
+      padding: 80px 20px 60px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .register-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 320px;
+    }
+
+    .register-box h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    .register-box input[type="text"],
+    .register-box input[type="email"],
+    .register-box input[type="tel"],
+    .register-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .register-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .register-box button:hover {
+      background-color: #0056b3;
+    }
+
+    .register-box p {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .register-box a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .register-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Remind Me</h1>
+  </header>
+
+  
+<div class="content">
+  <div class="register-box">
+    <h2>Sign Up</h2>
+    <form action="registerServlet" method="post">
+
+      <input type="text" name="userid" placeholder="User ID" required>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="contact" placeholder="Contact Number" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Register</button>
+
+    </form>
+    <p>Already have an account? <a href="index.html">Login</a></p>
+  </div>
+</div>
+
+
+
+  <footer>
+    <p>&copy; 2025 Remind Me. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
